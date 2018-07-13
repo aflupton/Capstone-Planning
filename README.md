@@ -8,9 +8,20 @@ I propose to develop a web app that displays api data for political contribution
 
 If the MVP is met, I propose allowing a user to input additional data into the app as it becomes available and then, if everything is working, to deploy the site via Firebase. Currently, I've yet to identify the api that I'll be using for the project. Similarly, I've yet to determine the exact tech stack that I'll utilize to make the app performant. Further planning notes will be posted here as I continue to develop the application concept.
 
+## Intended Features
+  * _Admin:_
+    * Edit, delete, and add new entries.
+    * View list of entries.
+  * _User:_
+    * Access list item details by clicking on item.
+    * Search entries by name, PAC, seat, party, etc.
+
+## Notes
+
+
 ## Tools
 
-* Node.js
+* NodeJS
 * React
 * React-Router
 * React-Redux
@@ -18,6 +29,7 @@ If the MVP is met, I propose allowing a user to input additional data into the a
 * Jest (testing)
 * HTML/CSS, JavaScript (ES6)
 * Draw.io (component tree diagram)
+* Firebase
 
 ## Contact
 
