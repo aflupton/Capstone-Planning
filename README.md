@@ -18,6 +18,7 @@ If the MVP is met, I propose allowing a user to input additional data into the a
 
 ## Notes
 
+  ![](src/assets/images/CompTree.png)
 
 ## Tools
 
