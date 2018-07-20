@@ -4,7 +4,12 @@
   "description": "## Project Description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll; exit 0",
+    "start": "webpack-dev-server",
+    "lint": "eslint 'src/**' 'src/**/**'; exit 0",
+    "lint-fix": "eslint 'src/**' 'src/**/**' --fix; exit 0",
+    "prod": "NODE_ENV=production node server.js",
+    "prodbuild": "webpack --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,39 @@
   "bugs": {
     "url": "https://github.com/aflupton/Capstone-Planning/issues"
   },
-  "homepage": "https://github.com/aflupton/Capstone-Planning#readme"
+  "homepage": "https://github.com/aflupton/Capstone-Planning#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase": "^3.0.0",
+    "install": "^0.12.1",
+    "moment": "^2.22.2",
+    "npm": "^6.2.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "styled-jsx": "^2.2.7",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.5.0"
+  }
 }
